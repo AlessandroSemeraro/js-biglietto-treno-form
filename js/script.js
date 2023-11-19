@@ -1,8 +1,9 @@
-const inputName = document.getElementById('inputName').value;
 
 const buttonSubmit = document.getElementById('buttonSubmit');
 
 buttonSubmit.addEventListener('click', function()   {
+
+    const inputName = document.getElementById('inputName').value;
 
     const inputKm = parseFloat(document.getElementById('inputKm').value);
 
@@ -21,6 +22,7 @@ buttonSubmit.addEventListener('click', function()   {
         else {
         priceTicket = priceTicket.toFixed(2)
     }
+
     userName.innerHTML = inputName;
     priceTicketFinal.innerHTML = priceTicket +'&euro;';
     //console.log(priceTicket)    
