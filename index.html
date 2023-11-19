@@ -26,48 +26,51 @@
     <!--TITLE-->
     <title>JS-biglietto-treno-form</title>
 </head>
-<body>
-    <header>
-        <h1>Calcola il prezzo del tuo biglietto</h1>
+<body class="bg-primary-subtle">
+    <header class="d-flex justify-content-center">
+        <h1 class="mt-3 fs-2 text-warning fw-bolder">Calcola il prezzo del tuo biglietto</h1>
     </header>
     <main>
-        <section>
-            <div>
-                <h2>Nome e Cognome</h2>
+
+        <!--USER INPUT TICKET-->
+        <section class="d-flex justify-content-center mb-3"> 
+            <div class="mx-4">
+                <h2 class="fs-6 text-center">Nome e Cognome</h2>
                 <input id="inputName" type="text">
             </div>
-            <div>
-                <h2>Km da percorrere</h2>
-                <input id="inputKm" type="text">
+            <div class="mx-4">
+                <h2 class="fs-6 text-center">Km da percorrere</h2>
+                <input id="inputKm" type="number">
             </div>
-            <div>
-                <h2>Età</h2>
-                <input id="inputAge" type="text">
-            </div>
-            
+            <div class="mx-4">
+                <h2 class="fs-6 text-center">Età</h2>
+                <input id="inputAge" type="number">
+            </div>  
         </section>
-        <div>
-            <button id="buttonSubmit" type="button" class="btn btn-warning">Genera</button>
+
+        <!--BUTTON-->
+        <div class="d-flex justify-content-center mb-2">
+            <button id="buttonSubmit" type="button" class="btn btn-warning fs-5">Genera</button>
         </div>
+
+        <!--GENERATE USER TICKET-->
        <section>
-        <div>
-            <h2>nome</h2>
-            <div>
-                <p id="userName"></p>
+            <div class="d-flex justify-content-center">
+                <h1 class="mt-3 fs-2 text-warning fw-bolder">Il tuo biglietto</h1>
             </div>
-        </div>
-        <div>
-            <h2>costo biglietto</h2>
-            <div>
-                <p id="priceTicketFinal"></p>
+            <div class="d-flex justify-content-center">
+                <div class="mx-4">
+                    <h2 class="fs-3 text-center text-danger-emphasis">nome</h2>
+                    <p id="userName" class="text-success"></p>
+                </div>
+                <div class="mx-4" >
+                    <h2 class="fs-3 text-center text-danger-emphasis">costo biglietto</h2>
+                    <p id="priceTicketFinal" class="text-success"></p>
+                </div>
             </div>
-        </div>
-        <div>
-
-        </div>
-
        </section>
     </main>
+
     <!--JS-->
     <script src="./js/script.js"></script>
 </body>
