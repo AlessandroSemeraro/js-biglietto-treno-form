@@ -21,8 +21,8 @@ buttonSubmit.addEventListener('click', function()   {
         else {
         priceTicket = priceTicket.toFixed(2)
     }
-    document.getElementById('userName').innerHTML=inputName;
-    document.getElementById('priceTicketFinal').innerHTML=priceTicket;
+    userName.innerHTML = inputName;
+    priceTicketFinal.innerHTML = priceTicket +'&euro;';
     //console.log(priceTicket)    
 }
 )
